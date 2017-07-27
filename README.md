@@ -7,7 +7,8 @@ EXCEL DNA COM Sample : Generation of an XLL file to be used in VBA
 1. Check post build event of project "DataApiAddin": it will generate tlb files, then build a DataApiAddin-packed.xll.
 
 2. Open Excel, load the DataApiAddin-packed.xll. 
-2. Or, Open Excel, Tools > References > Browse in order to add DataApiAddin-packed.xll
+
+3. Or, Open Excel, Tools > References > Browse in order to add DataApiAddin-packed.xll
 Not the tlb but the .xll. DataApiAddin-packed.xll can be added because of the following Pack="true" in DataApiAddin.dna file:
 
 ```
@@ -16,7 +17,7 @@ Not the tlb but the .xll. DataApiAddin-packed.xll can be added because of the fo
 
 tlb could be added but it is not the purpose.
 
-3. Alt+F11 
+4. Alt+F11 
 Add a module and the following code:
 
 
@@ -39,9 +40,9 @@ End Sub
 Check ExcelAddin.cs class : use of AutoOpen routine
 ```
 
-4. Press F5 to check the result
+5. Press F5 to check the result
 
-5. Additionnal: Check sample codes for details https://github.com/Excel-DNA/ExcelDna
+6. Additionnal: Check sample codes for details https://github.com/Excel-DNA/ExcelDna
 ```
 ExcelDna-master\ExcelDna-master\Distribution\Samples\ComServer 
 ```
