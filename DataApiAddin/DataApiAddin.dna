@@ -1,0 +1,5 @@
+<DnaLibrary Name="DataApiAddin" RuntimeVersion="v4.0">
+  <ExternalLibrary Path="DataApiAddin.dll" ComServer="true" Pack="true" /> <!-- Doit etre packed sinon marche pas !!! -->
+  <Reference Path="DataApi.Core.dll" LoadFromBytes="true" Pack="true" />
+  <Reference Path="DataApi.Model.dll" LoadFromBytes="true" Pack="true" />
+</DnaLibrary>
